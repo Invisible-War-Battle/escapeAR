@@ -75,7 +75,7 @@ body{
 
 #top{
 	background-image: url(fence.png);
-	transform: rotateX(-90deg) translateY(-250px);
+	transform: rotateX(90deg) translateY(-250px);
 	transform-origin: top;
 	height: 500px;
 	width: 500px;
@@ -91,7 +91,7 @@ body{
 	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
-	transform: rotateY(90deg) translateX(250px);
+	transform: rotateY(-90deg) translateX(250px);
 	transform-origin: right;
 }
 #topfront{
