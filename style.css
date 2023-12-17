@@ -75,32 +75,32 @@ body{
 }
 
 #top{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	transform: rotateX(-90deg) translateY(-250px);
 	transform-origin: top;
 }
 #topleft{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: rotateY(90deg) translateX(-250px);
 	transform-origin: left;
 }
 #topright{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: rotateY(90deg) translateX(250px);
 	transform-origin: right;
 }
 #topfront{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: translateZ(250px);
 }
 #topback{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: translateZ(-250px);
@@ -116,7 +116,7 @@ body{
 	top: 250px;
 }
 #bottomleft{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: rotateY(90deg) translateX(-250px);
@@ -124,7 +124,7 @@ body{
 	top: 250px;
 }
 #bottomright{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: rotateY(90deg) translateX(250px);
@@ -132,7 +132,7 @@ body{
 	top: 250px;
 }
 #bottomfront{
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: translateZ(250px);
@@ -140,7 +140,7 @@ body{
 }
 #bottomback{
 	top: 250px;
-	background-image: url(sky.jpeg);
+	background-image: url(fence.png);
 	height: 250px;
 	width: 500px;
 	transform: translateZ(-250px);
