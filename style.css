@@ -146,16 +146,16 @@ body{
 	transform: translateZ(-250px);
 }
 #note{
-	height: 100px;
-	width: 200px;
+	height: 300px;
+	width: 100px;
 	background: url("note.jpeg");
 	position: absolute;
 	z-index: 5;
 	left: 300px;
 }
 #answer{
-	height: 100px;
-	width: 200px;
+	height: 300px;
+	width: 100px;
 	background: url("note.jpeg");
 	position: absolute;
 	z-index: 5;
