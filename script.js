@@ -12,9 +12,9 @@ document.getElementById("mainDiv").onclick = ()=> {
 								.then(permissionState => {
 									if (permissionState === 'granted') {
 											window.addEventListener('deviceorientation', (e) => {
-																 x = e.beta;
+																 x = -e.beta;
 																 y = e.gamma;
-																 z = e.alpha;
+																 z = -e.alpha;
 												document.getElementById("mainDiv").style.transform = `translateZ(600px) rotateY(${y}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
 															});
 										
@@ -23,9 +23,9 @@ document.getElementById("mainDiv").onclick = ()=> {
 								.catch(console.error);
 						} 
 	window.addEventListener('deviceorientation', (e) => {
-																 x = e.beta;
+																 x = -e.beta;
 																 y = e.gamma;
-																 z = e.alpha;
+																 z = -e.alpha;
 												document.getElementById("mainDiv").style.transform = `translateZ(600px) rotateY(${y}deg) rotateX(${x}deg) rotateZ(${z}deg)`;
 															});
 
