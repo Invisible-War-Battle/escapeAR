@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<video id="vid" muted></video>
+	<video id="vid" autoplay inline muted></video>
 	<canvas id="play"></canvas>
 	<div id="world">
 		<div id="mainDiv">
@@ -41,10 +41,10 @@
 		var imageCapture;
 			var canvas = document.getElementById("play");
 			var ctx = canvas.getContext("2d");
+		document.body.requestFullscreen();
 		navigator.mediaDevices.getUserMedia({video: { facingMode: 'environment'}, audio: false}).then(function(video){
 			document.getElementById("vid").srcObject = video;
 							});
-		document.getElementById("vid").play();
 	</script>
 </body>
 
