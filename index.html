@@ -43,18 +43,8 @@
 			var ctx = canvas.getContext("2d");
 		navigator.mediaDevices.getUserMedia({video: { facingMode: 'environment'}, audio: false}).then(function(video){
 			document.getElementById("vid").srcObject = video;
-					 b = video.getVideoTracks()[0];
-			imageCapture = new ImageCapture(b);
 							});
-		function draw(){
-			 imageCapture
-    .takePhoto()
-    .then((blob) => {
-	    console.log(blob);
-	    document.body.style.backgroundImage = `url(${URL.createObjectURL(blob)})`
-	    
-					setTimeout(draw, 1000/30)
-    })
+		
     .catch((error) => console.error(error));
 			
 		}			
