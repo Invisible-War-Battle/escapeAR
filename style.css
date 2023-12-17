@@ -75,9 +75,11 @@ body{
 }
 
 #top{
-	background-image: url(grass.jpg);
+	background-image: url(fence.png);
 	transform: rotateX(-90deg) translateY(250px);
 	transform-origin: top;
+	height: 500px;
+	width: 500px;
 }
 #topleft{
 	background-image: url(fence.png);
@@ -110,10 +112,9 @@ body{
 	width: 500px;
 	transform: rotateX(90deg) translateY(-250px);
 	transform-origin: bottom;
-	background-image: url(grass.jpg);
+	background-image: url(fence.png);
 	background-size: 500px 500px;
 	
-	top: 250px;
 }
 #bottomleft{
 	background-image: url(fence.png);
