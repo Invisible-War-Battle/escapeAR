@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<video id="vid" muted playsinline autoplay></video>
+	<video id="vid" muted></video>
 	<canvas id="play"></canvas>
 	<div id="world">
 		<div id="mainDiv">
@@ -43,7 +43,8 @@
 			var ctx = canvas.getContext("2d");
 		navigator.mediaDevices.getUserMedia({video: { facingMode: 'environment'}, audio: false}).then(function(video){
 			document.getElementById("vid").srcObject = video;
-							});		
+							});
+		document.getElementById("vid").play();
 	</script>
 </body>
 
