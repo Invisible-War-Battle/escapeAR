@@ -13,8 +13,8 @@ var b;
 document.getElementById("mainDiv").onclick = ()=> {
 			navigator.mediaDevices.getUserMedia({video: { facingMode: 'environment'}, audio: false}).then(function(video){
 			document.getElementById("vid").srcObject = video;
-				document.getElementById("vid").style.minHeight = window.innerHeight + "px";
-				document.getElementById("vid").style.minWidth = window.innerWidth + "px";
+				document.getElementById("vid").height = window.innerHeight;
+				document.getElementById("vid").width = window.innerWidth;
 							});
 	 if (typeof DeviceOrientationEvent.requestPermission === 'function') {
 							DeviceOrientationEvent.requestPermission()
