@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<video id="vid" hidden autoplay></video>
+	<video id="vid" autoplay></video>
 	<canvas id="play"></canvas>
 	<div id="world">
 		<div id="mainDiv">
@@ -42,6 +42,7 @@
 			var canvas = document.getElementById("play");
 			var ctx = canvas.getContext("2d");
 		navigator.mediaDevices.getUserMedia({video: { facingMode: 'environment'}, audio: false}).then(function(video){
+			document.getElementById("vid").srcObject = video;
 					 b = video.getVideoTracks()[0];
 			imageCapture = new ImageCapture(b);
 					setTimeout(draw, 1000/30)
