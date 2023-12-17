@@ -11,11 +11,9 @@ var b;
 			var ctx = canvas.getContext("2d");
 		
 document.getElementById("mainDiv").onclick = ()=> {
-	document.getElementById("world").requestFullscreen().then(()=> {
 			navigator.mediaDevices.getUserMedia({video: { facingMode: 'environment'}, audio: false}).then(function(video){
 			document.getElementById("vid").srcObject = video;
 							});
-		})
 	 if (typeof DeviceOrientationEvent.requestPermission === 'function') {
 							DeviceOrientationEvent.requestPermission()
 								.then(permissionState => {
