@@ -50,7 +50,6 @@ body{
 	height: 100vh;
 		margin: 200px auto;
 		perspective: 800px;
-	opacity: 0.5;
 	}
 #desk{
 	height:300px; 
@@ -76,7 +75,7 @@ body{
 
 #top{
 	background-image: url(fence.png);
-	transform: rotateX(-90deg) translateY(250px);
+	transform: rotateX(-90deg) translateY(-250px);
 	transform-origin: top;
 	height: 500px;
 	width: 500px;
@@ -110,7 +109,7 @@ body{
 #bottom{
 	height: 500px;
 	width: 500px;
-	transform: rotateX(90deg) translateY(-250px);
+	transform: rotateX(90deg) translateY(250px);
 	transform-origin: bottom;
 	background-image: url(fence.png);
 	background-size: 500px 500px;
