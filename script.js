@@ -37,18 +37,18 @@ document.getElementById("mainDiv").onclick = ()=> {
 															});
 
 }
-if(window.location.hash === "1")
+if(window.location.hash === "1"){
 	speechSynthesis.speak(new SpeechSynthesisUtterance("Part 1 is: " + code.substring(0,4)));
 }
-if(window.location.hash === "2")
+if(window.location.hash === "2"){
 		speechSynthesis.speak(new SpeechSynthesisUtterance("Part 2 is: " + code.substring(4,8)));
 
 }
-if(window.location.hash === "3")
+if(window.location.hash === "3"){
 		speechSynthesis.speak(new SpeechSynthesisUtterance("Part 3 is: " + code.substring(8,12)));
 
 }
-if(window.location.hash === "4")
+if(window.location.hash === "4"){
 		speechSynthesis.speak(new SpeechSynthesisUtterance("Part 4 is: " + code.substring(12,16)));
 
 }
