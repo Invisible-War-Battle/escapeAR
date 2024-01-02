@@ -1,8 +1,6 @@
-alert("Escape in 5 minutes, or you will meet your doom. Find the 16 digit code, and type it into the box to get out. Tap to allow VR. Good luck!")
-var code = "";
-for(let i = 0; i < 16; i++){
-	code += (Math.floor(Math.random()*10)).toString();
-}
+alert("Escape in 5 minutes, or you will meet your doom. Find the 16 digit code in your room, and type it into the box to get out. Tap to allow VR. Good luck!")
+var code = "1952167823450967";
+
     // feature detect
 var x, y, z;
 var b;
@@ -39,18 +37,18 @@ document.getElementById("mainDiv").onclick = ()=> {
 															});
 
 }
-document.getElementById("retro"). onclick = ()=> {
+if(window.location.hash === "1")
 	speechSynthesis.speak(new SpeechSynthesisUtterance("Part 1 is: " + code.substring(0,4)));
 }
-document.getElementById("desk").onclick = ()=>{
+if(window.location.hash === "2")
 		speechSynthesis.speak(new SpeechSynthesisUtterance("Part 2 is: " + code.substring(4,8)));
 
 }
-document.getElementById("answer").onclick = ()=>{
+if(window.location.hash === "3")
 		speechSynthesis.speak(new SpeechSynthesisUtterance("Part 3 is: " + code.substring(8,12)));
 
 }
-document.getElementById("note").onclick = ()=>{
+if(window.location.hash === "4")
 		speechSynthesis.speak(new SpeechSynthesisUtterance("Part 4 is: " + code.substring(12,16)));
 
 }
